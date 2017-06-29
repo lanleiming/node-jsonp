@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+    $(function(){
+        $.post(
+                'http://127.0.0.1:3000/?file=2.json',
+                function(ret) {
+                   document.write(JSON.stringify(ret));
+                },
+                'jsonp'
+        );
+    });
+</script>
+</body>
+</html>
